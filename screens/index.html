@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="../Css/login.css">
+
+    <!-- Link para o JavaScript -->
+    <script src="../Js/script2.js" defer></script>
+</head>
+<body>
+    <!-- Vídeo de fundo -->
+    <div id="video-fundo">
+        <video id="video-animacao" src="../animacoes/animaçao3.mp4.mp4" muted playsinline loop autoplay></video>
+    </div>
+
+    <!-- Container de Login -->
+    <div class="container-box2" id="container-box2">
+        <h2>Bem-vindo de volta</h2>
+
+        <!-- Campo de e-mail -->
+        <input class="input-email" type="email" placeholder="Insira seu e-mail" id="email" required><br><br>
+
+        <!-- Campo de senha -->
+        <input class="input-senha1" type="password" placeholder="Senha" id="senha1" required><br><br>
+
+        <!-- Botão de login -->
+        <button onclick="logar()">Logar</button><br><br>
+
+        <!-- Mensagem de erro ou sucesso -->
+        <p id="mensagem" style="color: red;"></p>
+
+        <!-- Link para criação de conta -->
+        <p>Não possui conta? <a href="criarConta.html">Crie uma agora</a></p>
+    </div>
+
+    <!-- Container de vídeo de confirmação -->
+    <div id="video-container" class="hidden">
+        <video id="confirmacao-video" src="../animacoes/animaçao3.mp4.mp4" autoplay muted playsinline></video>
+    </div>
+</body>
+</html>
